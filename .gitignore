@@ -120,4 +120,26 @@ coverage/
 
 # Backup files
 *.bak
-*.backup 
+*.backup
+
+# Scripts and deployment files (exclude from GitHub)
+scripts/
+*.sh
+test-*.js
+task-definition*.json
+simple-task.json
+aws-deployment*.yml
+docker-compose.yml
+Dockerfile.simple
+
+# Backup directories
+backups/
+
+# Documentation files that are deployment-specific
+AURORA_*.md
+MIGRATION_GUIDE.md
+PRODUCTION_DEPLOYMENT_GUIDE.md
+upload-to-github.md
+
+# Environment files
+env.production 
